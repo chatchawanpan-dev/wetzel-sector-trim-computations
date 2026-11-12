@@ -1,0 +1,44 @@
+Independent re-check with mpmath intervals and floating-point sampling
+UTC: 2026-11-11T14:33:15.110452+00:00
+Python: 3.13.18 | NumPy 2.5.3 | mpmath 1.3.0
+Platform: Linux-6.18.44-fc-v378-x86_64-with-glibc2.39
+PART A: rigorous re-check with mpmath intervals (prec 120 bits)
+  Case 2: 33 rectangles cover the domain exactly (grid 8x6, overlap area 0); interval 427, Lemma 5.5 2, nodes 3529, depth 13
+  Case 3: 20 rectangles cover the domain exactly (grid 5x4, overlap area 0); interval 237, Lemma 5.5 23, nodes 1681, depth 9
+  Case 4: 21 rectangles cover the domain exactly (grid 5x5, overlap area 0); interval 250, Lemma 5.5 23, nodes 2568, depth 10
+  total: interval 914, Lemma 5.5 48, pairs 962
+PART B: floating-point checks
+  (19): kappa p_22.5 = e0 + b e1, kappa p_7.5 = b e0 + e1  ok;  b = 0.931852, kappa = 0.504314
+  Case 2: sampled max prefix norm 1.000000000 at ('B001', ['A', 'B', 'Xm', 'Xp'], 165.0, 0.0)
+           max over interval-checked prefixes 0.999229739 at ('B019', ['A', 'B', 'C', 'Xm', 'Xp'], 180.0, 7.5); |sum of coefficients| <= 5.0e-16
+  Case 3: sampled max prefix norm 1.000000000 at ('T1P1', ['A', 'B', 'Xm', 'Xp'], 165.0, 0.0)
+           max over interval-checked prefixes 0.996207531 at ('T2P2', ['A', 'Xm', 'Xp'], 172.5, 7.5); |sum of coefficients| <= 5.4e-16
+  Case 4: sampled max prefix norm 1.000000000 at ('T3P3', ['A', 'B', 'C', 'Xm', 'Xp'], 176.812, 11.812)
+           max over interval-checked prefixes 0.999865945 at ('T2P2', ['A', 'B', 'Xm', 'Xp'], 168.375, 3.75); |sum of coefficients| <= 4.8e-16
+  Case 2: Phi = 1 + lam(r-1) + (1-lam) kappa (s- + s+) on 2000 random chains, error 2.2e-15
+  Case 3: Phi = 1 + lam(r-1) + (1-lam) kappa (s- + s+) on 2000 random chains, error 2.4e-15
+  Case 4: Phi = 1 + lam(r-1) + (1-lam) kappa (s- + s+) on 2000 random chains, error 2.7e-15
+  incidences used: Case 2 U0:A,D U1:B V0:C,F V1:E; Case 3 U0:A,C U1:B V0:E V1:D,F; Case 4 U0:A,C U1:B V0:D,F V1:E (Table 2)
+  Lemma 5.5: both prefix formulas hold; max |w| on [0,30] = 1.000000 <= 1
+  Prop 5.2 (Case 2, both sectors): max norm of each of the 9 prefixes over [150,210]:
+      A          0.83333 at 150.00
+      XV         0.50431 at 150.04
+      AXV        0.97872 at 184.30
+      ABXV       0.97033 at 157.18
+      ABCXV      0.97321 at 180.00
+      ABCDXV     0.97033 at 202.82
+      ABCDEXV    0.97872 at 175.70
+      ABCDEFXV   0.50431 at 204.82
+      ABCDEXUXV  0.83333 at 210.00
+      Phi = 1 + kappa (s_U + s_V) on 2000 random chains, error 1.6e-15
+      q1 = 0.465926, q2 = 0.192993, 4k = 0.947129 (< 19/20), |Q|^2 = 0.254333 (< 13/50)
+      A1,B1,C1 = -0.29600, -0.04813, 0.95610  (table: -A1>=0.29, |B1|<=0.05, C1<=0.957)
+      A2,B2,C2 = -0.35734, 0.34572, 0.87112  (table: -A2>=0.35, |B2|<=0.35, C2<=0.872)
+  Table 5 (Cases 3 and 4, both sectors): largest norms and where
+      Case 3 [150,180]: 0.873159 (180.00)  0.995983 (153.88)  0.985323 (158.11)  0.904157 (180.00) | critical 1.000000 (180.0) | constant <= 0.6875
+      Case 3 [180,210]: 0.951017 (210.00)  0.981302 (180.00)  0.995581 (180.00)  0.886790 (210.00) | critical 1.000000 (180.0) | constant <= 0.5043
+      Case 4 [150,180]: 0.956856 (180.00)  0.973715 (165.52)  0.995581 (180.00)  0.886790 (150.00) | critical 1.000000 (180.0) | constant <= 0.7500
+      Case 4 [180,210]: 0.951017 (210.00)  0.981302 (180.00)  0.973715 (194.48)  0.956856 (180.00) | critical 1.000000 (180.0) | constant <= 0.7500
+  Lemma 3.3: coefficients sum to zero and |c_A + c_X| = 1 for Theta = 60, 90, 120
+  area(H15) = 0.2603092165; sector - H15 = 0.001490; triangle - H15 = 0.000647; d/dt = 2.9735e-04; 1 - rho = 0.008555; 1 + 2 sin 1 = 1.034905
+INDEPENDENT RE-CHECK: PASS

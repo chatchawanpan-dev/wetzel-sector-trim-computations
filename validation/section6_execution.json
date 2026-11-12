@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-11T14:33:15.007117+00:00",
+  "python": "3.13.18",
+  "platform": "Linux-6.18.44-fc-v378-x86_64-with-glibc2.39",
+  "inequalities_checked": {
+    "Proposition 6.6, Table 4": 12,
+    "Proposition 6.6, point Q_3": 1,
+    "Remark 6.8": 9
+  },
+  "section6_positive_controls": 2,
+  "section6_rejection_controls": 2,
+  "runs": [
+    {
+      "script": "verification/Section6/verify_zarc_test.py",
+      "log": "validation/section6.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.717
+    },
+    {
+      "script": "verification/test_section6.py",
+      "log": "validation/section6_controls.log",
+      "exit_code": 0,
+      "elapsed_seconds": 0.905
+    }
+  ],
+  "scope": "Execution of the Section 6.2 checker and its controls. Lemma 6.5 and the reductions in Proposition 6.6 and Remark 6.8 are proved in the paper."
+}

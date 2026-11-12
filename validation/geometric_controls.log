@@ -1,0 +1,27 @@
+PASS positive: sine, optimized=False
+PASS positive: sine, optimized=True
+PASS rejection: bad sine coefficient, optimized=False: coefficient reversal identity
+PASS rejection: bad sine coefficient, optimized=True: coefficient reversal identity
+PASS rejection: bad support coefficient, optimized=False: U coefficient balance
+PASS rejection: bad support coefficient, optimized=True: U coefficient balance
+PASS rejection: invalid root isolation, optimized=False: sqrt(3) isolation
+PASS rejection: invalid root isolation, optimized=True: sqrt(3) isolation
+PASS rejection: insufficient constant precision, optimized=False: central norm square < 19/20
+PASS rejection: insufficient constant precision, optimized=True: central norm square < 19/20
+PASS rejection: missing localized words, optimized=False: four words and nine prefix sets
+PASS rejection: missing localized words, optimized=True: four words and nine prefix sets
+PASS rejection: target above one, optimized=False: positive norm bound strictly below one
+PASS rejection: target above one, optimized=True: positive norm bound strictly below one
+PASS rejection: negative global target, optimized=False: positive norm bound strictly below one
+PASS rejection: negative global target, optimized=True: positive norm bound strictly below one
+PASS rejection: unsupported stronger target, optimized=False: constant and central prefixes below M
+PASS rejection: unsupported stronger target, optimized=True: constant and central prefixes below M
+PASS rejection: negative quadratic curvature bound, optimized=False: valid completion parameters
+PASS rejection: negative quadratic curvature bound, optimized=True: valid completion parameters
+PASS rejection: missing quadratic bound row, optimized=False: complete two-quadratic inventory
+PASS rejection: missing quadratic bound row, optimized=True: complete two-quadratic inventory
+PASS positive: circle, optimized=False
+PASS rejection: circle refuses optimized execution
+PASS rejection: missing circle case: complete sixteen-comparison inventory
+PASS rejection: invalid circle target: positive circle bound below one
+PASS: 3 positive controls and 23 rejection controls; distributed sources unchanged.

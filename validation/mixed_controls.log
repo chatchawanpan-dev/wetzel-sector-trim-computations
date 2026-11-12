@@ -1,0 +1,13 @@
+PASS: Case 2 rejects missing_box (coverage gap)
+PASS: Case 2 rejects coverage_gap (coverage gap)
+PASS: Case 2 rejects negative_weight (assert F(0) < lam < F(1))
+PASS: Case 2 rejects wrong_coefficient (uncertified prefix)
+PASS: Case 3 rejects missing_box (unexpected mixed-box count)
+PASS: Case 3 rejects coverage_gap (coverage gap)
+PASS: Case 3 rejects negative_weight (lambda)
+PASS: Case 3 rejects wrong_coefficient ('MIX')
+PASS: Case 4 rejects missing_box (unexpected mixed-box count)
+PASS: Case 4 rejects coverage_gap (coverage gap)
+PASS: Case 4 rejects negative_weight (lambda)
+PASS: Case 4 rejects wrong_coefficient ('MIX')
+PASS: all twelve mixed-state rejection controls; distributed inputs unchanged

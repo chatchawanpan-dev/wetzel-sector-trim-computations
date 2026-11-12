@@ -1,0 +1,5 @@
+PASS: distributed Section 6 checks
+PASS: the arc Z does not fit in the triangle conv{O, p_0, p_30}
+PASS rejection: t = 3.7, reflected copies: fails at theta = beta
+PASS rejection: pentagon with the chord chi = 15 only: fails at theta = 210 - beta
+PASS: 2 positive controls and 2 rejection controls

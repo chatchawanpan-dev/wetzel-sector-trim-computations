@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-11-11T14:33:13.384903+00:00",
+  "python": "3.13.18",
+  "platform": "Linux-6.18.44-fc-v378-x86_64-with-glibc2.39",
+  "runtime_file_count": 9,
+  "geometric_positive_controls": 3,
+  "geometric_rejection_controls": 23,
+  "mixed_rejection_controls": 12,
+  "mixed_rectangles": {
+    "Case2": 33,
+    "Case3": 20,
+    "Case4": 21
+  },
+  "runs": [
+    {
+      "script": "verification/verify_proof_essential.py",
+      "log": "validation/proof_essential.log",
+      "exit_code": 0,
+      "elapsed_seconds": 24.071
+    },
+    {
+      "script": "verification/test_geometric_certificates.py",
+      "log": "validation/geometric_controls.log",
+      "exit_code": 0,
+      "elapsed_seconds": 1.633
+    },
+    {
+      "script": "verification/test_mixed_certificates.py",
+      "log": "validation/mixed_controls.log",
+      "exit_code": 0,
+      "elapsed_seconds": 6.404
+    }
+  ],
+  "scope": "Execution and intended control behavior of the supplied exact programs; geometric reductions and proof interpretation remain mathematical dependencies."
+}
