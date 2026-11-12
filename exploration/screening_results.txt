@@ -1,0 +1,13 @@
+Screening of the simplified chain model (exploration/screen_cap_branches.py)
+Options: --restarts 1 --maxiter 300; 1120 orders for each t.
+Run on 2026-11-11 with Python 3.13.18, NumPy 2.5.3, SciPy 1.18.1, Linux-6.18.44-fc-v378-x86_64-with-glibc2.39.
+The values are the smallest local minima returned by L-BFGS-B; they are not certified bounds.
+
+     t   smallest length   1+2sin(t-15)  solver warnings  cap points Xm, Xp of the shortest chain (all six radial points are at O)
+    12       0.993128805              -              263  Xm = (0.959289, 0.257041) = 0.993129 at 15.0000 deg;  Xp = (0.959289, 0.257041) = 0.993129 at 15.0000 deg
+    14       0.997876471              -              245  Xm = (0.963514, 0.259612) = 0.997876 at 15.0798 deg;  Xp = (0.963514, 0.259612) = 0.997876 at 15.0798 deg
+    15       1.000000000    1.000000000              240  Xm = (0.965926, 0.258819) = 1.000000 at 15.0000 deg;  Xp = (0.965926, 0.258819) = 1.000000 at 15.0000 deg
+  15.5       1.017453071    1.017453071              244  Xm = (0.968148, 0.250380) = 1.000000 at 14.5000 deg;  Xp = (0.963630, 0.267238) = 1.000000 at 15.5000 deg
+    16       1.034904813    1.034904813              249  Xm = (0.970296, 0.241922) = 1.000000 at 14.0000 deg;  Xp = (0.961262, 0.275637) = 1.000000 at 16.0000 deg
+    17       1.069798993    1.069798993              243  Xm = (0.974370, 0.224951) = 1.000000 at 13.0000 deg;  Xp = (0.956305, 0.292372) = 1.000000 at 17.0000 deg
+    20       1.174311485    1.174311485              240  Xm = (0.984808, 0.173648) = 1.000000 at 10.0000 deg;  Xp = (0.939693, 0.342020) = 1.000000 at 20.0000 deg
