@@ -1,0 +1,196 @@
+{
+  "status": "PASS",
+  "comparisons": 16,
+  "parameter_interval_arithmetic": false,
+  "fixed_constant_enclosures": {
+    "sqrt3": [
+      "1.73205",
+      "1.73206"
+    ],
+    "b": [
+      "0.9318",
+      "0.9319"
+    ]
+  },
+  "all_noncritical_localized_prefixes_bound": "999/1000",
+  "constant_prefixes_bound": "3/4",
+  "critical_prefix": "analytic chord bound 1",
+  "records": [
+    {
+      "case": 3,
+      "half": "left_half",
+      "prefix": "AXV",
+      "maximum_location": "upper endpoint",
+      "determinant_signs": [
+        1,
+        -1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 3,
+      "half": "left_half",
+      "prefix": "ABXV",
+      "maximum_location": "alignment",
+      "determinant_signs": [
+        1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 3,
+      "half": "left_half",
+      "prefix": "ABCDXV",
+      "maximum_location": "alignment",
+      "determinant_signs": [
+        1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 3,
+      "half": "left_half",
+      "prefix": "ABCDEXV",
+      "maximum_location": "upper endpoint",
+      "determinant_signs": [
+        1,
+        -1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 3,
+      "half": "right_half",
+      "prefix": "AXV",
+      "maximum_location": "upper endpoint",
+      "determinant_signs": [
+        1,
+        -1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 3,
+      "half": "right_half",
+      "prefix": "ABXV",
+      "maximum_location": "lower endpoint",
+      "determinant_signs": [
+        -1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 3,
+      "half": "right_half",
+      "prefix": "ABCDXV",
+      "maximum_location": "lower endpoint",
+      "determinant_signs": [
+        -1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 3,
+      "half": "right_half",
+      "prefix": "ABCDEXV",
+      "maximum_location": "upper endpoint",
+      "determinant_signs": [
+        1,
+        -1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 4,
+      "half": "left_half",
+      "prefix": "AXV",
+      "maximum_location": "upper endpoint",
+      "determinant_signs": [
+        1,
+        -1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 4,
+      "half": "left_half",
+      "prefix": "ABXV",
+      "maximum_location": "alignment",
+      "determinant_signs": [
+        1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 4,
+      "half": "left_half",
+      "prefix": "ABCDXV",
+      "maximum_location": "upper endpoint",
+      "determinant_signs": [
+        1,
+        -1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 4,
+      "half": "left_half",
+      "prefix": "ABCDEXV",
+      "maximum_location": "lower endpoint",
+      "determinant_signs": [
+        -1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 4,
+      "half": "right_half",
+      "prefix": "AXV",
+      "maximum_location": "upper endpoint",
+      "determinant_signs": [
+        1,
+        -1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 4,
+      "half": "right_half",
+      "prefix": "ABXV",
+      "maximum_location": "lower endpoint",
+      "determinant_signs": [
+        -1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 4,
+      "half": "right_half",
+      "prefix": "ABCDXV",
+      "maximum_location": "alignment",
+      "determinant_signs": [
+        1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    },
+    {
+      "case": 4,
+      "half": "right_half",
+      "prefix": "ABCDEXV",
+      "maximum_location": "lower endpoint",
+      "determinant_signs": [
+        -1,
+        1
+      ],
+      "norm_bound": "999/1000"
+    }
+  ]
+}

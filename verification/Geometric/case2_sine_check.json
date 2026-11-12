@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "construction": "one sine coefficient rule over the full orientation interval",
+  "coefficients": {
+    "a": "-(2+sin(theta))/3",
+    "c": "-(1+sin(theta))/3"
+  },
+  "orientation_degrees": [
+    150,
+    210
+  ],
+  "words": 4,
+  "prefix_sets": 9,
+  "prefix_norm_bound": "49/50",
+  "closed_chain_length_lower_bound": "50/49",
+  "angular_sampling": false,
+  "orientation_subdivision": false,
+  "verification": "formal rational polynomial identities and exact fixed-algebraic bounds",
+  "quadratic_bounds": [
+    {
+      "prefix": 1,
+      "alpha": "29/100",
+      "beta": "1/20",
+      "gamma": "957/1000",
+      "squared_norm_upper_bound": "55631/58000"
+    },
+    {
+      "prefix": 2,
+      "alpha": "7/20",
+      "beta": "7/20",
+      "gamma": "109/125",
+      "squared_norm_upper_bound": "1919/2000"
+    }
+  ],
+  "central_squared_norm_upper_bound": "19/20",
+  "dependencies": [
+    "canonical Case 2 incidences",
+    "four-word upper-cap witness localization",
+    "balanced-prefix length inequality",
+    "y <= 1-x^2/2 when y>=0 and x^2+y^2=1",
+    "concave quadratic maximum by completing the square"
+  ]
+}
