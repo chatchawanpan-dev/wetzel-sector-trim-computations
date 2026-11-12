@@ -1,0 +1,75 @@
+{
+  "schema": "h15-current-proof-inventory-v1",
+  "version": "2026-10-04",
+  "date": "2026-10-04",
+  "entry_point": "verification/verify_proof_essential.py",
+  "runtime_file_count": 9,
+  "runtime": "Python standard library; do not optimize complete proof route.",
+  "files": [
+    {
+      "path": "verification/verify_proof_essential.py",
+      "runtime_required": true,
+      "role": "five-stage proof driver",
+      "bytes": 2003,
+      "sha256": "a0b80ebe5ef2a0782d3e9bab13f313001027c90d2ec9428fd7a9571e9fe37759"
+    },
+    {
+      "path": "verification/Geometric/verify_case2_sine.py",
+      "runtime_required": true,
+      "role": "Case2 global coefficient rule",
+      "bytes": 11027,
+      "sha256": "648027c56f27e291db081e9a07b02b9ae8868854c269bea7ea1f0230bb425346"
+    },
+    {
+      "path": "verification/Geometric/verify_capcap_circles.py",
+      "runtime_required": true,
+      "role": "Cases3\u20134 fixed algebraic circle comparisons",
+      "bytes": 4554,
+      "sha256": "4d6e2bafc03fd469b1f3f39864c283f1057836272ea29b6569050cb07ac1d79e"
+    },
+    {
+      "path": "verification/Case2/verify_case2_actual_mixed_prefix.py",
+      "runtime_required": true,
+      "role": "Case2 exact mixed prefixes",
+      "bytes": 9149,
+      "sha256": "d57f7bb8ce5ab82ae196958d23dcc8192543aa228d90cf98e60d367776676f9d"
+    },
+    {
+      "path": "verification/Case2/case2_actual_mixed_prefix_data.json",
+      "runtime_required": true,
+      "role": "Case2 complete mixed coefficient data",
+      "bytes": 8486,
+      "sha256": "41dacf2cc8e89fa04c34479c06f31dbfe3b43a34e50b308cc1243724afabbdd5"
+    },
+    {
+      "path": "verification/Case3/verify_case3_mixed.py",
+      "runtime_required": true,
+      "role": "Case3 exact mixed prefixes",
+      "bytes": 12302,
+      "sha256": "3180c08b644c70215dd6836bc9124cef9120761378bda85d6d76f3958f7d82ac"
+    },
+    {
+      "path": "verification/Case3/case3_mixed_certificate_data.json",
+      "runtime_required": true,
+      "role": "Case3 complete mixed coefficient data",
+      "bytes": 4935,
+      "sha256": "34067fe47224d19ba33296429f92e223ce94eea71ff3e27f309a9e0daabb3335"
+    },
+    {
+      "path": "verification/Case4/verify_case4_mixed.py",
+      "runtime_required": true,
+      "role": "Case4 exact mixed prefixes",
+      "bytes": 12227,
+      "sha256": "026df0180fa20bbbf4f2297167deb05ab751e2f40d37e4b1372f681927d563b1"
+    },
+    {
+      "path": "verification/Case4/case4_mixed_certificate_data.json",
+      "runtime_required": true,
+      "role": "Case4 complete mixed coefficient data",
+      "bytes": 5011,
+      "sha256": "9cfa032eb6482560d48dbcddab4b5f59a529960597474b7b4f04b9902551c13a"
+    }
+  ],
+  "inventory_self": "verification/PROOF_ESSENTIAL_FILES.json",
+  "edition": "current first-submission certificates"
+}
